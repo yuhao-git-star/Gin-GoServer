@@ -2,36 +2,12 @@
 
 
 [[projects]]
-  digest = "1:573fa46f8d413d4bc3f7cc5e86b2c43cb21559f4fb0a19d9874d228e28fdc07c"
-  name = "github.com/PuerkitoBio/goquery"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "2d2796f41742ece03e8086188fa4db16a3a0b458"
-  version = "v1.5.0"
-
-[[projects]]
   digest = "1:e92f5581902c345eb4ceffdcd4a854fb8f73cf436d47d837d1ec98ef1fe0a214"
   name = "github.com/StackExchange/wmi"
   packages = ["."]
   pruneopts = "UT"
   revision = "5d049714c4a64225c3c79a7cf7d02f7fb5b96338"
   version = "1.0.0"
-
-[[projects]]
-  digest = "1:66b3310cf22cdc96c35ef84ede4f7b9b370971c4025f394c89a2638729653b11"
-  name = "github.com/andybalholm/cascadia"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "901648c87902174f774fac311d7f176f8647bdaa"
-  version = "v1.0.0"
-
-[[projects]]
-  digest = "1:f438d91be142877c3ad83157992c91de787ddfbddcc2a7da1ef6ef61606cadc4"
-  name = "github.com/cheekybits/genny"
-  packages = ["generic"]
-  pruneopts = "UT"
-  revision = "d2cf3cdd35ce0d789056c4bc02a4d6349c947caf"
-  version = "v1.0.0"
 
 [[projects]]
   digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
@@ -78,14 +54,6 @@
   packages = ["proto"]
   pruneopts = "UT"
   revision = "5a0f697c9ed9d68fef0116532c6e05cfeae00e55"
-
-[[projects]]
-  digest = "1:a63cff6b5d8b95638bfe300385d93b2a6d9d687734b863da8e09dc834510a690"
-  name = "github.com/google/go-querystring"
-  packages = ["query"]
-  pruneopts = "UT"
-  revision = "44c6ddd0a2342c386950e880b658017258da92fc"
-  version = "v1.0.0"
 
 [[projects]]
   digest = "1:c0d19ab64b32ce9fe5cf4ddceba78d5bc9807f0016db6b1183599da3dcc24d10"
@@ -222,25 +190,6 @@
   revision = "c88ee250d0221a57af388746f5cf03768c21d6e2"
 
 [[projects]]
-  digest = "1:f65f69106b85620aa4ad153685c2ec3798f433902e3d595a298cf6a503169b09"
-  name = "github.com/vinta/pangu"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "f1cdb73eaf33f9057f38302f610a021bbca5b46a"
-  version = "v3.0.0"
-
-[[projects]]
-  branch = "master"
-  digest = "1:81e1a7dd1ab100e3ac0ad948e844959a0ebb225ad22849ccfa028503da17caed"
-  name = "golang.org/x/net"
-  packages = [
-    "html",
-    "html/atom",
-  ]
-  pruneopts = "UT"
-  revision = "eb5bcb51f2a31c7d5141d810b70815c05d9c9146"
-
-[[projects]]
   branch = "master"
   digest = "1:012ffea19e0c7f3bf69652ba71b42c8ffa9929ad53f8a1d50534b279cfd7a34f"
   name = "golang.org/x/sys"
@@ -286,19 +235,14 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/PuerkitoBio/goquery",
-    "github.com/cheekybits/genny/generic",
     "github.com/fsnotify/fsnotify",
     "github.com/gin-gonic/gin",
-    "github.com/google/go-querystring/query",
     "github.com/lexkong/log",
     "github.com/shirou/gopsutil/cpu",
     "github.com/shirou/gopsutil/disk",
     "github.com/shirou/gopsutil/load",
     "github.com/shirou/gopsutil/mem",
-    "github.com/spf13/pflag",
     "github.com/spf13/viper",
-    "github.com/vinta/pangu",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
