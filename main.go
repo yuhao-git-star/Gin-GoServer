@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/viper"
 
-	"Gin-GoServer/config"
-	"Gin-GoServer/routes"
+	"yasuoyuhao-591-api/config"
+	"yasuoyuhao-591-api/routes"
 
 	"github.com/gin-gonic/gin"
 

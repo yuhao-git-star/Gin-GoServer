@@ -3,8 +3,9 @@ package routes
 import (
 	"net/http"
 
-	"Gin-GoServer/handler/sd"
-	"Gin-GoServer/routes/middleware"
+	"yasuoyuhao-591-api/handler/sd"
+	rentapi "yasuoyuhao-591-api/handler/rent"
+	"yasuoyuhao-591-api/routes/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -29,6 +30,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		svcd.GET("/disk", sd.DiskCheck)
 		svcd.GET("/cpu", sd.CPUCheck)
 		svcd.GET("/ram", sd.RAMCheck)
+	}
+
+	rent := g.Group("/rent")
+	{
+		rent.GET("/", rentapi.Searchrentby591)
 	}
 
 	return g

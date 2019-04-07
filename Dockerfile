@@ -7,12 +7,12 @@ ADD https://github.com/golang/dep/releases/download/v0.5.1/dep-linux-amd64 /usr/
 RUN chmod +x /usr/bin/dep
 
 # Copy the code from the host and compile it
-WORKDIR $GOPATH/src/Gin-GoServer
+WORKDIR $GOPATH/src/yasuoyuhao-591-api
 COPY Gopkg.toml Gopkg.lock ./
 RUN dep ensure --vendor-only
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o ./Gin-GoServer .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o ./yasuoyuhao-591-api .
 EXPOSE 8888
 # FROM scratch
-# COPY --from=builder /Gin-GoServer ./
-ENTRYPOINT ["./Gin-GoServer"]
+# COPY --from=builder /yasuoyuhao-591-api ./
+ENTRYPOINT ["./yasuoyuhao-591-api"]
